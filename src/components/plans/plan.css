@@ -1,0 +1,88 @@
+.plans_container {
+  margin-top: -4rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+.program_headers {
+  text-align: center;
+  font-weight: 500;
+  font-size: larger;
+  padding: 1%;
+ 
+}
+.program_headers_title{
+    
+    border-bottom: 3px solid blue;
+}
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+    text-align: center;
+    border-radius: 8px;
+}
+.circular_div {
+    position: absolute;
+    top: 0;
+   
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+  }
+.plan:nth-child(2){
+    
+    transform: scale(1.1);
+}
+.plan_title{
+  
+  font-weight: bold;
+}
+.plan_des{
+    color:#9f9fa9 ;
+}
+.demo{
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+    background-color: #468FEC;
+    color: white;
+}
+.demo span{
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.demo div{
+    margin-top: 2%;
+}
+.demo_button{
+    background-color: #f48915;
+    color: white;
+    border: 2px solid #f48915 ;
+    letter-spacing: 2px;
+    width: 8rem;
+    padding: 1%;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}

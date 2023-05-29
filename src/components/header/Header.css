@@ -1,0 +1,52 @@
+.header{
+    display: flex; 
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo{
+    height: 48px;
+    width: 160px;
+}
+
+.header_menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: black;
+}
+.header_menu > li {
+    cursor: pointer;
+    font-weight:500;
+}
+.header_menu > li:hover {
+    cursor: pointer;
+    color:  rgb(5,55,172);
+    
+}
+
+.navbar_button{
+  /* border: 1px solid black; */
+  padding: 1%;
+}
+.navbar_button button {
+    padding: 2%;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(5,55,172);
+    border: 1px solid  rgb(5,55,172);
+    color: white;
+}
+@media screen and (max-width :768px){
+
+    .header > :nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .header_menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}
