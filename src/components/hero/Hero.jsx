@@ -5,10 +5,13 @@ import transport1 from "../../assets/transport1.jpg"
 import transport2 from "../../assets/transport2.jpg"
 import transport3 from "../../assets/transport3.jpg"
 import "./hero.css";
+import Header from "../header/Header";
+import About from "../about/About";
 const Hero = () => {
   return (
     <div>
       <div className="hero">
+        
         <div className="left_div">
           <div className="hero_text">
             <div>
@@ -31,12 +34,16 @@ const Hero = () => {
           </div>
         </div>
         <div className="right_div">
-          <img src={hero_image_back} className="hero_image_back" />
+         
           <img src={transport1} className="image1" />
           <img src={transport2} className="image2" />
           <img src={transport3} className="image3" />
+          <img src={transport1} className="image4" />
+          <img src={transport2} className="image5" />
+          <img src={transport3} className="image6" />
         </div>
       </div>
+      <About/>
     </div>
   );
 };

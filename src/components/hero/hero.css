@@ -1,96 +1,189 @@
 /* body{
     background-color: rgb(249,252,255);
 } */
-.hero{
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #f9fcff;
 }
 .left_div {
-    padding: 2rem;
-    padding-top: 1.5rem;
-    display: flex;
-    flex: 3;
-    gap: 3rem;
-    flex-direction: column;
-
+  padding: 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex: 3;
+  gap: 3rem;
+  flex-direction: column;
 }
 .hero_text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-overflow: inherit;
+}
+.hero_text > div:nth-of-type(3) {
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+.hero_btn {
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+}
+.hero_btn > button:nth-of-type(1) {
+  background-color: #f48915;
+  color: white;
+  border: 2px solid #f48915;
+  letter-spacing: 2px;
+  width: 8rem;
+  border-radius: 5px;
+}
+.hero_btn > button:nth-of-type(2) {
+  color: #f48915;
+  background-color: transparent;
+  border: 2px solid #f48915;
+  width: 8rem;
+  border-radius: 5px;
+}
+.right_div {
+  position: relative;
+  background-color: rgb(67, 120, 249);
+  flex: 3;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 500px;
+}
+.hero_image_back {
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  z-index: -1;
+  width: 15rem;
+}
+.right_div .image1 {
+  position: absolute;
+  top: 05%;
+  right: 10%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.right_div .image2 {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.right_div .image3 {
+  position: absolute;
+  top: 10%;
+  right: 70%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.right_div .image4 {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.right_div .image5 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.right_div .image6 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    display: block;
+  
+  }
+  .logo{
+    width: 100px;
+  }
+  .hero_text {
     gap: 1.5rem;
-    
-    font-size: 2.5rem;
+
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
     text-overflow: inherit;
-}
-.hero_text>div:nth-of-type(3) {
-    font-size: 1rem; 
-    font-weight: 200;
-    text-decoration: none;
-    letter-spacing: 1px;
-    width: 80%;
-}
-.hero_btn {
-    display: flex;
-    gap: 1rem;
-    font-weight: normal;
-}
-.hero_btn>button:nth-of-type(1){
-    background-color: #f48915;
-    color: white;
-    border: 2px solid #f48915 ;
-    letter-spacing: 2px;
-    width: 8rem;
-    border-radius: 5px;
-
-}
-.hero_btn>button:nth-of-type(2) {
-    color: #f48915;
-    background-color: transparent;
-    border: 2px solid #f48915 ;
-    width: 8rem;
-    border-radius: 5px;
-}
-.right_div {
+  }
+  .right_div {
     position: relative;
-    background-color:rgb(67,120,249) ;
-    flex: 3;
-    border: 1px solid black;
-
-
-}
-.hero_image_back {
-    position: absolute;
-    top: 4rem;
-    right: 20rem;
-    z-index: -1;
-    width: 15rem;
-}
-.right_div .image1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    height: 120px;
-    width: 120px;
+  }
+  .right_div .image1 {
+   
+    top: 05%;
+    right: 10%;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
   }
   
   .right_div .image2 {
-    position: absolute;
-    top: 50%;
-    left:5%;
-    height: 120px;
-    width: 120px;
+   
+    top: 40%;
+    right: 30%;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
   }
   
   .right_div .image3 {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    height: 120px;
-    width: 120px;
+   
+    top: 10%;
+    right: 70%;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
   }
+  .right_div .image4 {
+     top: 80%;
+    left: 20%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .right_div .image5 {
+    
+    top: 50%;
+    left: 0%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .right_div .image6 {
+    
+    top: 80%;
+    left: 80%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+}
+
